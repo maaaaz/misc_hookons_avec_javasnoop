@@ -26,7 +26,7 @@ Les autres ressources sont regroupées au sein de l'arborescence suivante :
 ```
 
 
-Copyright et license
+Copyright et licence
 ---------------------
 Toutes les ressources de ce dépôt sont distribuées sous licence GPLv3.
 
