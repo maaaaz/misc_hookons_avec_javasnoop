@@ -41,6 +41,10 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 import javassist.ByteArrayClassPath;
 import javassist.CtBehavior;
+import javassist.CtMethod;
+import javassist.CtConstructor;
+import javassist.expr.ExprEditor;
+import javassist.expr.MethodCall;
 import javassist.LoaderClassPath;
 
 public class InstrumentationManager {
@@ -228,10 +232,12 @@ public class InstrumentationManager {
                 else
                     methodName = "<init>";
 
-                CtBehavior method = null;
+                CtMethod method = null;
 
                 if ( "<init>".equals(methodName)) {
-                    method = cls.getDeclaredConstructor(classes);
+                    CtConstructor myConstructor = new CtConstructor(classes, cls);
+                    myConstructor = cls.getDeclaredConstructor(classes);
+                    method = myConstructor.toMethod("<init>", cls);
                 } else {
                     method = cls.getDeclaredMethod(methodName, classes);
                 }
@@ -253,13 +259,11 @@ public class InstrumentationManager {
                 }
 
                 if ( change.getNewEndSrc().length() > 0 ) {
-                    AgentLogger.trace("Compiling code for end of function:");
+                    AgentLogger.trace("Compiling code in place of function:");
                     AgentLogger.trace(change.getNewEndSrc());
-                    method.insertAfter( " { " + change.getNewEndSrc() + " } ");
+                    method.setBody(" { " + change.getNewEndSrc() + " } ");
+                    AgentLogger.debug("Done bytecode modification for " + clazz.getName());
                 }
-                
-                AgentLogger.debug("Done bytecode modification for " + clazz.getName());
-
             }
            
             // save the instrumented version of the class

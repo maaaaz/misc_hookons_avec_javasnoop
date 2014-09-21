@@ -10,7 +10,7 @@ Ce dépôt contient les sources et binaires mentionnés dans le pentest corner d
 Les autres ressources sont regroupées au sein de l'arborescence suivante :
 ```
 +---JavaSnoop
-|   +---build			: Les classes compilées
+|   +---build
 |   +---dist			: Le programme compilé
 |   +---lib				: Les dépendances, notamment la bibliothèque Javassist
 |   +---nbproject		: Les fichiers projet NetBeans

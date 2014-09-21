@@ -483,12 +483,15 @@ public class ChooseProcessView extends javax.swing.JDialog {
 		    if (MonitoredVmUtil.isAttachable(mvm)) {
 		    	attachable = true;
 		    } else {
+                        String lolilol =  new String("lolilol");
+                        /**
 		    	if (MonitoredVmUtil.isKernelVM(mvm)) {
         	            logger.trace("Kernel VM does not support the attach mechanism");
 		    	}
 		    	else {
                             logger.trace("The VM does not support the attach mechanism for pid " + id);
             	    	}
+                        * **/
 		    }
 	    } catch (Throwable t) {
 		    // we do not know what this id is
