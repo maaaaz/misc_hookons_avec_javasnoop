@@ -4,8 +4,8 @@ MISC Hookons avec JavaSnoop
 Description
 -----------
 Ce dépôt contient les sources et binaires mentionnés dans le pentest corner du MISC n°X :
-* La version compilée du programme `SecureCommunications` est téléchargeable [ici]() ;
-* La version modifiée de JavaSnoop évoquée dans l'article est téléchargeable [ici]().
+* La version compilée du programme `SecureCommunications` est téléchargeable [ici](https://github.com/maaaaz/misc_hookons_avec_javasnoop/raw/master/SecureCommunications/dist/SecureCommunications.jar) ;
+* La version modifiée de JavaSnoop évoquée dans l'article est téléchargeable [ici](https://github.com/maaaaz/misc_hookons_avec_javasnoop/raw/master/JavaSnoop/dist/JavaSnoop_v1.11.zip).
 
 Les autres ressources sont regroupées au sein de l'arborescence suivante :
 ```
