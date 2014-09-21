@@ -20,13 +20,13 @@ Les autres ressources sont regroupées au sein de l'arborescence suivante :
 |
 +---Pinned_certificate	: Le certificat épinglé du serveur Web 'secure.lan' et sa clé privée associée
 |       
-\---SecureCommunications
++---SecureCommunications
     +---dist			: Le programme compilé
     +---src				: Le code source de l'application SecureCommunications
 ```
 
 
-Copyright and license
+Copyright et license
 ---------------------
 Toutes les ressources de ce dépôt sont distribuées sous licence GPLv3.
 
