@@ -12,17 +12,17 @@ Les autres ressources sont regroupées au sein de l'arborescence suivante :
 +---JavaSnoop
 |   +---build			: Les classes compilées
 |   +---dist			: Le programme compilé
-|   +---lib
+|   +---lib				: Les dépendances, notamment la bibliothèque Javassist
 |   +---nbproject		: Les fichiers projet NetBeans
 |   +---resources
 |   +---src				: Le code source modifié de JavaSnoop
 |   +---test
 |
-+---Pinned_certificate	: Le certificat épinglé du serveur Web `secure.lan` et sa clé privée associée
++---Pinned_certificate	: Le certificat épinglé du serveur Web 'secure.lan' et sa clé privée associée
 |       
 \---SecureCommunications
     +---dist			: Le programme compilé
-    \---src				: Le code source de l'application SecureCommunications
+    +---src				: Le code source de l'application SecureCommunications
 ```
 
 
